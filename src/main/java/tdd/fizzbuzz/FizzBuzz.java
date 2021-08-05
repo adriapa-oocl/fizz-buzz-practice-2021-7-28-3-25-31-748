@@ -8,6 +8,8 @@ public class FizzBuzz{
             return "Fizz";
         }else if (convertedOrderNumber % 5 == 0){
             return "Buzz";
+        }else if (convertedOrderNumber % 7 == 0){
+            return "Whizz";
         }
         return orderNumber;
     }
