@@ -14,6 +14,16 @@ public class FizzBuzzTest {
         String result = fizzBuzz.countOff(orderNumber);
         //then
         assertThat(result).isEqualTo("1");
+    }
 
+    @Test
+    void should_return_order_number_when_count_off_given_count_off_is_divisible_by_3() {
+        //given
+        String orderNumber = "3";
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.countOff(orderNumber);
+        //then
+        assertThat(result).isEqualTo("Fizz");
     }
 }
